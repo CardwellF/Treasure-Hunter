@@ -139,11 +139,34 @@ class User(Player, GameMap):
             self.use_PowerUP()
     
     #find enemy method
-    def find_enemy(self):
+    def find_none_search(self):
+        #start position
+        start = self.User_position
+        #get end position
         for x in self.Gmap:
             for y in self.Gmap[x]:
-                if self.Gmap[x][y][1] == 9:
-                    print(f"enemy at co-ordinates ({x}, {y})")
+                if self.Gmap[x][y][2] == False:
+                    end = self.Gmap[x][y]
+        #depth first search for shortest path to next identified room
+        rows, columns = len(self.Gmap), len(self.Gmap[x])#rows and columns set
+        stack = [(self.User_position, [self.User_positiion)]#set up stack
+        visited = set()#create visited set
+        #while stack 
+        while stack:
+            (x, y), path = stack.pop()#path set
+            #if co-ordinated visited
+            if (x, y) in visited:
+                continue
+            #add co-ordinates to visited
+            visited.add((x, y))
+            #if co-ordinates = end position
+            if (x, y) == end:
+                print("path: ", path)#print path
+            for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+                nx, ny = x + dx, y + dy
+                if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 0:
+                    stack.append(((nx, ny), path + [(nx, ny)]))
+        print("end not found")
 
 '''Enemy(SubClass)'''
 class Enemy(GameMap):
