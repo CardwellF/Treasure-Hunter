@@ -1,2 +1,16 @@
 # Treasure-Hunter
-a python based treasure hunting game for Year 1 Computer science software development
+## Introduction
+Welcome to Treasure Hunter a text based python game where the aim is to have the most money at the end
+## Project Overview
+I plan to create a text based treasure hunting game which can be played as many times as the user wants due to all rooms generating randomly upon searching the room.
+## Challenges and Solutions
+while working on thisa program I faced a number of different challenges. 
+My first challenge I faced during development was figuring out the map I tested multiple iterations including using 3D lists as well as using embedded lists. My solution to this was to use one 2D list allowing both players to be in the same room as each other without overriding, this also allowed me to randomise room type makng the game more chance based
+## Search Algorithms
+For my program i have made use of linear search to find specific numbers within my 2D list for the game map. I chose to use Linear Search due to the fact my list will never be ordered as the list if constantly being updated due to this using binary search or interpolation sort would be ineffective due to the fact that they require a sorted list to work.
+## Pseudocode/flowchart
+
+## Test Evidence
+during my testing i had a a few errrors including miss spelt variable names and a few class inheriatance issues however all these issues have been fixed. However the largest error I faced during testing was that my classes would break this was due to adding variable names to the links which did not exist within the method this was fixed by re arranging where the variable is called
+## Conclusions
+in conclusion, my program works well as long as the imports, random and keyboard are installed. In addition teh program gives the user
