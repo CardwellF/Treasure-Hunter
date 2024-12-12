@@ -126,7 +126,7 @@ class User(Player, GameMap):
         if self.inventory['locate'] != 0:
             PowerUP = "Active"
             self.inventory['locate'] -= 1
-            self.find_enemy()
+            self.find_none_search()
         else:
             print("you have no locate PowerUP's")
     
