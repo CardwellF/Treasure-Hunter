@@ -12,6 +12,8 @@ For my program i have made use of linear search to find specific numbers within 
 during my testing i had a a few errrors including miss spelt variable names and a few class inheriatance issues however all these issues have been fixed. However the largest error I faced during testing was that my classes would break this was due to adding variable names to the links which did not exist within the method this was fixed by re-arranging where the variable is called. Another problem I had was when it came to text inputs as a result I had to do some research into the keyboard import libary and found that it while using a testing file found that the import resolved my imput problem as i could have it be more responsive than having to press enter after every input was made.
 | test        | problem     | resolution  |
 |:-----------:|:-----------:|:-----------:|
-|classs       | inheritence |changed ordering |
+|classes       | inheritence |changed ordering of classses |
+|Classes       | breaking    |removed and relocated missing variable names |
+|inputs        | not responcive enough |used keyboard import |
 ## Conclusions
 in conclusion, even though I had multiple errors and issues regarding my code as explaned above 
