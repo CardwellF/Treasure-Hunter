@@ -1,6 +1,6 @@
 # Treasure-Hunter
 ## Introduction
-Welcome to Treasure Hunter a text based python game where the aim is to have the most money at the end
+Welcome to Treasure Hunter a text based python game where the aim is to have the most money at the end at the end of the game while avoiding traps
 ## Project Overview
 I plan to create a text based treasure hunting game which can be played as many times as the user wants due to all rooms generating randomly upon searching the room. For this program I intend to have treasure be money and have the player with the most money be the winner of the game this is to stop the game from randomly generating the treasure on the first tile the user or enemy visits, finishing the game straight away before the rest of the map is explored.
 ## Challenges and Solutions
